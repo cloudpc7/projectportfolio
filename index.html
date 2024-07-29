@@ -3,9 +3,30 @@
 <head>
     <meta charset="utf-8" />
     <title>Nine Wives</title>
+    <style>
+        .wheel-button {
+          display: inline-block;
+          width: 300px;
+          height: 300px;
+          background-color: #3498db;
+          border: none;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 100px; /* Same as height to center text vertically */
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s;
+        }
+      
+        .wheel-button:hover {
+          background-color: #a829b9;
+        }
+    </style>
 </head>
 <body>
-        <button type="button" onclick="shootYourShot()">Spin the Wheel of Fate</button>
-        <script src="/js/Nine-Wives.js"></script>
+    <button class="wheel-button" onclick="shootYourShot()">Spin the Wheel of Fate</button>   
+    <script src="/js/Nine-Wives.js"></script>
 </body>
 </html>
